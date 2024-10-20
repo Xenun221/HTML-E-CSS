@@ -1,0 +1,38 @@
+/* Para não ter problemas com caracteres especiais */
+@charset "UTF-8";
+
+*{
+    /* height: 100%; */
+    font-family: Arial, Helvetica, sans-serif
+}   
+
+body{
+    background-image: linear-gradient(to right, #41BFB3,#9BF2EA);
+}
+
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    /* Vai centralizar idepedente do tamanho da tela */
+    margin: auto;
+
+    /* Usando Bordas */
+    /* Arredondar as boras */
+    border-radius: 10px;
+    /* Sombra */
+    box-shadow: 5px 5px 15px #260101;
+}
+
+h1{
+    text-align: center;
+    color: #260101;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2{
+    color: #275950;
+}
+p{
+    text-align: justify;
+}
