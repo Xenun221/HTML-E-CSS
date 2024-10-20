@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            /* Modoficando as fontes */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            /* SEMPRE usar as SAFES Combinations pois se uma fonte falhar a outra vai ser acionada */
+
+            /* Tamanhos de fontes */
+            /* 
+            Medidas Absolutas:
+            cm, mm, in(polegada), px, pt, pc
+            pt e pc não e recomendado usar
+
+
+            Medidas Relativas:
+            em(tamanho atual da fonte M de uma letra), ex(altura x de uma fonte x de uma letra), rem(fonte que esta configurada no body), vm(largura da view port, tamanho da sua tela), vh(largura da view port), % 
+            */
+            font-size: 16px;
+
+            /* Peso da fonte */
+            font-weight: lighter;
+            /* variações de peso: Lighter, normal, bold, bolder. Podemos usar as variações numericas */
+
+            /* Usando estilos de fontes */
+            font-style: italic;
+
+            /* Uso do text decoration */
+            text-decoration: underline;
+
+        }
+
+        h1{
+            /* font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+
+            /* ShortHand
+            --font-style - font-weight, font-size, font-family
+            */
+            font: italic bolder 3em Arial;
+            
+        }
+
+        h2{
+            font: italic bolder 3em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat quis earum tempora assumenda aperiam repellat sit ipsa! Eaque natus dignissimos distinctio voluptate est illo laborum laudantium non deserunt ut.</p>
+
+    <!-- Subtítulo do exercicío -->
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eaque, unde iste suscipit cum in a iure illum maxime amet facere optio earum adipisci voluptas consequatur officia saepe molestiae accusamus!</p>
+</body>
+</html>
