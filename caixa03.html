@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        nav{
+            background-color: rgb(124, 121, 121);
+            padding: 3px;
+
+            /*Sombra*/
+            box-shadow: 1px 1px 1px black   ;
+        }
+
+        h1{
+            box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.116);
+        }
+
+        nav >a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        
+        }
+        
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color:rgb(107, 107, 107);
+        }
+        footer{
+            background: black;
+            color: wheat;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 20px 30px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            background-color: white;
+
+            /*Arredondando em forma de bola*/
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- As Grouping tags sempre foram duas a div e o Span. O html5 evoluiu e agora as grouping tags são semanticas -->
+
+    <header> <!--Cabeçlho-->
+        <h1>Meu site</h1>
+        <nav> <!--Navegação usando Links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Conteudo principal-->
+        <section id="assuntos">
+            <p>Esportes Politica e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis vitae accusantium libero molestiae. Quas, error, harum fugiat ullam numquam fugit aliquam soluta vel illum, quisquam rem dolorem sequi labore?</p>
+                <aside>Artigo escritopor José da Silva</aside>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer> <!--Rodapé-->
+        <p>Desenvolido pelo Xenun</p>
+    </footer>
+
+    <div id="bola">
+
+    </div>
+</body>
+</html>
